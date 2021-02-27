@@ -34,9 +34,9 @@ interface ChallengesProviderProps {
 export const ChallengesConstext = createContext({} as ChallengesConstextData);
 
 export function ChallengesProvider({ children, ...rest }: ChallengesProviderProps) {
-  const [level, setLevel] = useState(rest.level ?? 1);
-  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
-  const [challengesCompleted, setCompletedChallenges] = useState(rest.challengesCompleted ?? 0);
+  const [level, setLevel] = useState(rest.level || 1);
+  const [currentExperience, setCurrentExperience] = useState(rest.currentExperience || 0);
+  const [challengesCompleted, setCompletedChallenges] = useState(rest.challengesCompleted || 0);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
 
