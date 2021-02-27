@@ -13,7 +13,7 @@ export function Profile() {
         <strong>Marcus Vinícius</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
-          {`Level ${level || 1}`}
+          {`Level ${level}`}
         </p>
       </div>
     </div>
